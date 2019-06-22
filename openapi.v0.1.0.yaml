@@ -1,0 +1,29 @@
+openapi: "3.0.0"
+info:
+  description: "RESTful Web Services for Facebook Libra RPC"
+  version: "v0.1.0"
+  title: "Admission Control"
+  termsOfService: "https://libra.org/en-US/privacy/#terms_of_use"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+# Overview: https://medium.com/giglabs/my-initial-tests-of-facebooks-libra-what-s-there-today-ea16b94b1d36
+#  account — Account operations
+#  query — Query operations
+#  transfer — Transfer coins from account to another
+paths:
+  /account:
+#  create — Creates an account. This just creates an account locally. The account isn’t actually written to the blockchain until either money is added to the account via the mint command or money is transferred to the account from another account via the transfer command.
+#  list — Print all accounts that were created or loaded.  ** Optional Query Param to list All Accounts **
+#  recover — Recover Libra wallet from the file path. This assumes the write command was already executed.
+#  write — Save Libra wallet mnemonic recovery seed to disk.
+#  mint — Mint coins to the account.
+  /query:
+#  balance — Get the current balance of an account.
+#  sequence — Get the current sequence number for an account, and reset current sequence number in CLI.
+#  account_state — Get the latest state for an account.
+#  txn_acc_seq — Get the committed transaction by account and sequence number. Optionally also fetch events emitted by this transaction.
+#  txn_range — Get the committed transactions by version range. Optionally also fetch events emitted by these transactions.
+#  event — Get events by account and event type (sent|received).
+  /transfer:
+#  transfer — Transfer coins from account to another.
